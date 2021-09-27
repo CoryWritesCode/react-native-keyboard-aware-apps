@@ -15,7 +15,6 @@ import {
   StatusBar,
   StyleSheet,
   Text,
-  TextInput,
   useColorScheme,
   View,
 } from 'react-native';
@@ -58,9 +57,6 @@ const Section = ({children, title}): Node => {
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const scrollViewRef = useRef();
-  const textInputRef1 = useRef();
-  const textInputRef2 = useRef();
-  const textInputRef3 = useRef();
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
